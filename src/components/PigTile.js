@@ -11,7 +11,7 @@ function PigTile({hog}){
     return(
         <div className="pigTile">
             <h3>{hog.name}</h3>
-            <img onClick={handleClick} src={hog.image} alt="hog" />
+            <img alt="hog" onClick={handleClick} src={hog.image} />
             { seeDetails ? <Details hog={hog}/> : "" }
 
         </div>
